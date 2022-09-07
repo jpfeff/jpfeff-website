@@ -9,7 +9,7 @@
     "build": "npm run clean; NODE_ENV=production webpack --color",
     "winbuild": "npm run clean & SET NODE_ENV=production& webpack --color",
     "clean": "rimraf dist",
-    "deploy" : "gh-pages-d build"
+    "deploy" : "gh-pages -d build"
   },
   "repository": {
     "type": "git",
