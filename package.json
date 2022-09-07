@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/jpfeff/web-starterpack/issues"
   },
-  "homepage": "https://github.com/jpfeff/pfeff.me",
+  "homepage": "https://pfeff.me",
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.18.9",
