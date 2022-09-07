@@ -8,7 +8,8 @@
     "test": "eslint src",
     "build": "npm run clean; NODE_ENV=production webpack --color",
     "winbuild": "npm run clean & SET NODE_ENV=production& webpack --color",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "deploy" : "gh-pages-d build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/jpfeff/web-starterpack/issues"
   },
-  "homepage": "https://github.com/jpfeff/web-starterpack#readme",
+  "homepage": "https://github.com/jpfeff/pfeff.me",
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.18.9",
@@ -37,6 +38,7 @@
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-webpack-plugin": "^3.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.1",
