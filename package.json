@@ -2,10 +2,10 @@
   "name": "web-starterpack",
   "version": "1.0.0",
   "description": "",
-  "main": "docs/index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack serve",
-    "test": "eslint docs",
+    "test": "eslint src",
     "build": "npm run clean; NODE_ENV=production webpack --color",
     "winbuild": "npm run clean & SET NODE_ENV=production& webpack --color",
     "clean": "rimraf dist",
