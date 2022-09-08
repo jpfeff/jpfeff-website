@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { createRoot } from 'react-dom/client';
 import debounce from 'lodash.debounce';
-import './style.scss';
+import './src/style.scss';
 // import $ from 'jquery';
 
-import SearchBar from './components/search_bar';
-import youtubeSearch from './components/youtube-api';
-import VideoList from './components/video_list';
-import VideoDetail from './components/video_detail';
+import SearchBar from './src/components/search_bar';
+import youtubeSearch from './src/components/youtube-api';
+import VideoList from './src/components/video_list';
+import VideoDetail from './src/components/video_detail';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
