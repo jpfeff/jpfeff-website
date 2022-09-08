@@ -1,38 +1,91 @@
-$fontcolor:  rgb(10%, 10%, 10%);
-$backgroundcolor: rgb(98%, 98%, 98%);
+$almostblack:  #252626;
+$backgroundcolor: #F8FDFF;
+$pink: #F3B9BA;
+$royalblue: #004CA5;
+
+// TYPE
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: $fontcolor;
+  padding: 0;
+  margin: 0;
   background-color: $backgroundcolor;
-  margin: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
-#search-bar {
-  margin-bottom: 20px;
-
-  input {
-    font-size: 1.5em;
-    border-radius: .25em;
-  }
+h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;  
+  text-align: right;
 }
 
-#video-detail {
-  width: 100%;
-}
+// CLASS
 
-#video-section {
+.navbar {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  li {
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    width: 25vw;
-    padding: 10px;
-  }
-  li:hover {
-    background: darken( $backgroundcolor, 10% );
-  }
+.navbar-text {
+  color: $almostblack;
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: 1em;
+  padding: 2em;
+  padding-bottom: 0.75em;
+}
 
+.image {
+  width: 40em;
+}
+
+.role-card {
+  background-color: $royalblue;
+  margin-bottom: 1.5em;
+  border-radius: 3em;
+}
+
+.card-text {
+  color: white;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 3em;
+}
+
+// ID
+
+#my-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 5.5em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+}
+
+#main-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#main-column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

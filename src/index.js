@@ -1,47 +1,31 @@
 import React, { Component } from 'react';
 import { createRoot } from 'react-dom/client';
-import debounce from 'lodash.debounce';
 import './style.scss';
 // import $ from 'jquery';
 
-import SearchBar from './components/search_bar';
-import youtubeSearch from './components/youtube-api';
-import VideoList from './components/video_list';
-import VideoDetail from './components/video_detail';
+import Navbar from './components/navbar';
+import MyPicture from './img/me_with_background.png';
+import RoleCard from './components/rolecard';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   // eslint-disable-next-line no-useless-constructor
-// here's what our constructor would look like
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      videos: [],
-      selectedVideo: null,
-    };
-
-    this.search = debounce(this.search, 300);
-  }
-
-  search = (text) => {
-    youtubeSearch(text).then((videos) => {
-      console.log(videos);
-
-      this.setState({
-        videos,
-        selectedVideo: videos[0],
-      });
-    });
-  };
-
   render() {
     return (
       <div>
-        <SearchBar onSearchChange={this.search} />
-        <div id="video-section">
-          <VideoList onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })} videos={this.state.videos} />
-          <VideoDetail video={this.state.selectedVideo} />
+        <Navbar />
+        <div id="main-row-flex">
+          <div id="main-column-flex">
+            <div id="my-name">
+              <h1>Joshua</h1>
+              <h1>Pfefferkorn</h1>
+            </div>
+            <div className="card-flex">
+              <RoleCard text="Software Engineer" />
+              <RoleCard text="UI/UX Designer" />
+            </div>
+          </div>
+          <img className="image" alt="" src={MyPicture} />
         </div>
       </div>
     );
