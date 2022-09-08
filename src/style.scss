@@ -10,12 +10,17 @@ a, a:hover, a:focus, a:active {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: $backgroundcolor;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  padding-bottom: 3em;
 }
 
 h1 {
@@ -23,6 +28,29 @@ h1 {
   font-size: 64px;
   line-height: 72px;  
   text-align: right;
+  color: $almostblack;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;  
+  color: $pink;
+  padding-top: 0.1em;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;  
+  color: $almostblack;
+}
+
+p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;  
+  color: $almostblack;
 }
 
 // CLASS
@@ -32,6 +60,9 @@ h1 {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  padding-top: 3em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 .navbar-text {
@@ -39,12 +70,16 @@ h1 {
   font-weight: 600;
   font-size: 1.75em;
   line-height: 1em;
-  padding: 2em;
-  padding-bottom: 0.75em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.navbar-text:hover {
+  color: $royalblue;
 }
 
 .image {
-  width: 40em;
+  scale: 0.9;
 }
 
 .role-card {
@@ -65,7 +100,85 @@ h1 {
   flex-direction: column;
   align-items: flex-end;
   padding-right: 3em;
+  padding-left: 3em;
 }
+
+.icon-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 0.4em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.icon {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 6em;
+}
+
+.divider {
+  height: 3px;
+  background-color: $royalblue;
+  opacity: 0.1;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.about-section-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-section-column-flex {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding-left: 6em;
+}
+
+.contact-section-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-section-column-flex {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+  padding-left: 6em;
+}
+
+.projects-section-row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.projects-section-card-row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-section-card-column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  padding: 3em;
+  margin: 4em;
+  margin-top: 0em;
+  margin-left: 0em;
+  background-color: #ECEEF3;
+  border-radius: 2em;
+  width: 25em;
+  height: 25em;
+}
+
 
 // ID
 
@@ -75,7 +188,13 @@ h1 {
   align-items: flex-end;
   padding-top: 5.5em;
   padding-right: 3em;
+  padding-left: 3em;
   padding-bottom: 1em;
+}
+
+#my-email {
+  font-weight: 600;
+  color: royalblue;
 }
 
 #main-row-flex {
@@ -88,4 +207,98 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#contact-divider {
+  margin-top: 0.5em;
+}
+
+#projects-divider {
+  margin-bottom: 4em;
+}
+
+// MOBILE
+
+@media screen and (max-width: 640px) {  
+
+  h3 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 3em;
+  }
+
+  .navbar-text {
+    padding-bottom: 0.5em;
+  }
+
+  #my-name {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0em;
+  }
+
+  #main-row-flex {
+    flex-direction: column;
+  }
+
+  .icon-flex {
+    justify-content: center;
+  }
+
+  .card-flex {
+    align-items: center;
+  }
+
+  // FIX THIS
+  .about-section-row-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section-column-flex {
+    width: 80%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .contact-section-row-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section-column-flex {
+    width: 80%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .projects-section-row-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header {
+    order: -1;
+  }
+  
+  .projects-section-card-row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card {
+    margin-right: 0;
+  }
+  
+  .projects-section-card-column-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

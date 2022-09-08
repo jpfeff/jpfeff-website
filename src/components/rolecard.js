@@ -1,7 +1,6 @@
 import React from 'react';
 
-// eslint-disable-next-line react/function-component-definition
-const RoleCard = (props) => {
+function RoleCard(props) {
   const role = props.text;
 
   return (
@@ -9,6 +8,6 @@ const RoleCard = (props) => {
       <h2 className="card-text">{role}</h2>
     </div>
   );
-};
+}
 
 export default RoleCard;

@@ -19,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(pdf|jpe?g|png|gif|svg)$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name].[contenthash][ext][query]',
