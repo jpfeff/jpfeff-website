@@ -1,5 +1,5 @@
 {
-  "name": "pfeff.me",
+  "name": "jpfeff-website",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpfeff/pfeff.me.git"
+    "url": "git+https://github.com/jpfeff/jpfeff-website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jpfeff/pfeff.me/issues"
+    "url": "https://github.com/jpfeff/jpfeff-website/issues"
   },
-  "homepage": "https://github.com/jpfeff/pfeff.me.git#readme",
+  "homepage": "https://github.com/jpfeff/jpfeff-website.git#readme",
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.18.9",
