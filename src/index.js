@@ -8,7 +8,6 @@ import LinkedIn from './img/linkedin.png';
 import GitHub from './img/github.png';
 import Resume from './img/resume.png';
 import ResumePDF from './pdf/resume.pdf';
-// import CaseStudy from './pdf/case_study.pdf';
 
 import Navbar from './components/navbar';
 import RoleCard from './components/rolecard';
