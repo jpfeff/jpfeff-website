@@ -72,10 +72,13 @@ p {
   line-height: 1em;
   padding-left: 2em;
   padding-right: 2em;
+  transition: ease-in-out 50ms;
 }
 
 .navbar-text:hover {
   color: $royalblue;
+  scale: 103%;
+  transition: ease-in-out 50ms;
 }
 
 .image {
@@ -173,10 +176,31 @@ p {
   margin: 4em;
   margin-top: 0em;
   margin-left: 0em;
-  background-color: #ECEEF3;
+  background-color: #eceef3;
   border-radius: 2em;
   width: 25em;
   height: 25em;
+  transition: all ease-in-out 200ms;
+
+  // box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+  // 5px 5px 3px rgba(0,0,0,0.1);
+
+}
+
+.project-card:hover {
+  // box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
+  // 1px 1px 1px rgba(0,0,0,0.3);
+  transition: all ease-in-out 200ms;
+  background-color: $royalblue;
+  scale: 102%;
+}
+
+.project-card:hover > h4 ~ p {
+  color: $backgroundcolor;
+}
+
+.project-card:hover > h4 {
+  color: $backgroundcolor;
 }
 
 
@@ -296,15 +320,22 @@ p {
   .projects-section-card-row-flex {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .project-card {
     margin-right: 0;
+    width: 90%;
+    height: 100%;
   }
   
   .projects-section-card-column-flex {
     display: flex;
     flex-direction: column;
+  }
+
+  #my-email {
+    word-break: break-all;
   }
 
 }
