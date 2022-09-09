@@ -36,12 +36,12 @@ class App extends Component {
       proj4href: 'https://github.com/jpfeff/wordle-solver',
 
       proj5title: 'Superstore Dataset Analysis',
-      proj5desc: 'Created visualizations and a implemented machine learning model in Python to predict profit-margin ratio given sales data.',
+      proj5desc: 'Data visualizations and a Python machine learning model to predict profit-margin ratio given sales data.',
       proj5href: 'https://github.com/jpfeff/DALI-Data-Challenge-22S',
 
-      proj6title: 'Fitness App Design',
-      proj6desc: 'Designed and prototyped a goal-setting and exercise-tracking app.',
-      proj6href: 'https://github.com/jpfeff/flow-app',
+      proj6title: 'Flow Fitness App',
+      proj6desc: 'A goal-setting and exercise-tracking app designed and prototyped from scratch.',
+      proj6href: 'https://www.figma.com/file/qcdSeh2oSrJ9UXB8OhKBuA/Flow-Case-Study?node-id=0%3A1',
     };
   }
 
@@ -60,13 +60,13 @@ class App extends Component {
               <RoleCard text="UI/UX Designer" />
             </div>
             <div className="icon-flex">
-              <a href="https://www.linkedin.com/in/joshua-pfefferkorn/">
+              <a target="_blank" href="https://www.linkedin.com/in/joshua-pfefferkorn/" rel="noreferrer">
                 <img className="icon" alt="" src={LinkedIn} />
               </a>
-              <a href="https://github.com/jpfeff/">
+              <a target="_blank" href="https://github.com/jpfeff/" rel="noreferrer">
                 <img className="icon" alt="" src={GitHub} />
               </a>
-              <a href={ResumePDF}>
+              <a target="_blank" href={ResumePDF} rel="noreferrer">
                 <img className="icon" alt="" src={Resume} />
               </a>
             </div>
@@ -95,7 +95,7 @@ class App extends Component {
             </div>
             <div className="projects-section-card-row-flex">
               <ProjectCard href={this.state.proj3href} title={this.state.proj3title} desc={this.state.proj3desc} />
-              <ProjectCard href={this.state.proj4href} title={this.state.proj4title} desc={this.state.proj4desc} />
+              <ProjectCard target="_blank" href={this.state.proj4href} title={this.state.proj4title} desc={this.state.proj4desc} />
             </div>
             <div className="projects-section-card-row-flex">
               <ProjectCard href={this.state.proj5href} title={this.state.proj5title} desc={this.state.proj5desc} />
@@ -116,7 +116,7 @@ class App extends Component {
                 You can contact me through LinkedIn or by email at &nbsp;
               </span>
               <span id="my-email">
-                <a href="mailto: joshua.d.pfefferkorn.24@dartmouth.edu">joshua.d.pfefferkorn.24@dartmouth.edu</a>
+                <a target="_blank" href="mailto: joshua.d.pfefferkorn.24@dartmouth.edu" rel="noreferrer">joshua.d.pfefferkorn.24@dartmouth.edu</a>
               </span>
               <span>
                 .

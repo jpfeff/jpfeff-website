@@ -8,7 +8,7 @@ function Navbar(props) {
       <a className="navbar-text" href="#about-divider">About</a>
       <a className="navbar-text" href="#projects-divider">Projects</a>
       <a className="navbar-text" href="#contact-divider">Contact</a>
-      <a className="navbar-text" href={resume}>Resume</a>
+      <a className="navbar-text" target="_blank" href={resume} rel="noreferrer">Resume</a>
     </ul>
   );
 }
